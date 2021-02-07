@@ -1,23 +1,14 @@
-#using while loop
 number = int(input("enter a number"))
-start = 2
-while start < number :
-    if number % start == 0 :
-        print("not a prime number")
-        break
-    start += 1
+if number > 1:
+    for i in range (2,number):
+        if number % i ==0:
+            print("not prime number ")
+            break
+    else:
+         print('prime number',number)
+else:
+    print('not a prime number')
 
-else :
-    print("prime number")
-
-#using for loop
-number = int(input("enter a number"))
-for start in range (2,number):
-    if number % start == 0:
-        print ('not prime')
-        break
-else :
-    print('prime')
 
 
 
